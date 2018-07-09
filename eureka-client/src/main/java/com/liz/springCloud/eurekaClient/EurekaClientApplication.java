@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.netflix.feign.EnableFeignClients;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -24,18 +25,17 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 //通过注解@EnableEurekaClient 表明自己是一个eureka client
 @EnableEurekaClient
-@RestController
+
+
+//该注解是开启feign的扫描，启用feign进行远程调用
+@EnableFeignClients
+
 public class EurekaClientApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(EurekaClientApplication.class, args);
     }
 
-    @Value("${server.port}")
-    String port;
-    @RequestMapping("/hi")
-    public String home(@RequestParam String name) {
-        return "hi "+name+",i am from port:" +port;
-    }
+
 
 }

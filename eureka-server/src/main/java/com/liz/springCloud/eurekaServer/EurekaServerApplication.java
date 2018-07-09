@@ -8,9 +8,9 @@ import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 //eureka server 是有界面的，启动工程,打开浏览器访问：http://localhost:8761 ,
 @EnableEurekaServer
 @SpringBootApplication
-public class EurekaApplication {
+public class EurekaServerApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(EurekaApplication.class, args);
+		SpringApplication.run(EurekaServerApplication.class, args);
 	}
 }
