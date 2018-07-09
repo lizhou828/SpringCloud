@@ -25,7 +25,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 //2、@FeignClient所在的接口中，不支持@GetMapping等组合注解
 //3、使用@PathVariable时，需要制定其value
 //4、Feign暂时不支持复杂对象作为一个参数
-@FeignClient(value = "test-service",url = "")
+@FeignClient(value = "eureka-client-application")
 public interface TestService {
 
     @RequestMapping(value = "/getProviderAppName" ,method = RequestMethod.GET)

@@ -4,8 +4,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
-//Ö»ĞèÒªÒ»¸ö×¢½â@EnableEurekaServer£¬Õâ¸ö×¢½âĞèÒªÔÚspringboot¹¤³ÌµÄÆô¶¯applicationÀàÉÏ¼Ó@EnableEurekaServer,¾ÍÄÜÆô¶¯Ò»¸ö·şÎñ×¢²áÖĞĞÄ
-//eureka server ÊÇÓĞ½çÃæµÄ£¬Æô¶¯¹¤³Ì,´ò¿ªä¯ÀÀÆ÷·ÃÎÊ£ºhttp://localhost:8761 ,
+//åªéœ€è¦ä¸€ä¸ªæ³¨è§£@EnableEurekaServerï¼Œè¿™ä¸ªæ³¨è§£éœ€è¦åœ¨springbootå·¥ç¨‹çš„å¯åŠ¨applicationç±»ä¸ŠåŠ @EnableEurekaServer,å°±èƒ½å¯åŠ¨ä¸€ä¸ªæœåŠ¡æ³¨å†Œä¸­å¿ƒ
+//eureka server æ˜¯æœ‰ç•Œé¢çš„ï¼Œå¯åŠ¨å·¥ç¨‹,æ‰“å¼€æµè§ˆå™¨è®¿é—®ï¼šhttp://localhost:8761 ,
 @EnableEurekaServer
 @SpringBootApplication
 public class EurekaServerApplication {

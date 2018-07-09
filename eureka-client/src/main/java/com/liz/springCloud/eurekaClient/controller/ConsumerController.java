@@ -30,8 +30,7 @@ public class ConsumerController {
 
     @RequestMapping("/feign-consumer")
     public String home(@RequestParam String name) {
-//        String providerAppName =  testService.getProviderAppName();
-                String providerAppName =  "";
+        String providerAppName =  testService.getProviderAppName();
         return "hi "+name+",i am from port:" +port + ",providerAppName is " + providerAppName;
     }
 }
