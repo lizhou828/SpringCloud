@@ -23,9 +23,9 @@ import org.springframework.web.bind.annotation.RestController;
  */
 
 @SpringBootApplication
+
 //通过注解@EnableEurekaClient 表明自己是一个eureka client
 @EnableEurekaClient
-
 
 //该注解是开启feign的扫描，启用feign进行远程调用
 @EnableFeignClients
