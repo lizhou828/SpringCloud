@@ -24,7 +24,7 @@ public class ProviderController {
 
     @RequestMapping("/getProviderAppName")
     public String getProviderAppName(){
-    return "你好! 我是小AI同学，编号AI1001, 我服务器的名称是:" + appName + "=====";
+    return "服务提供者的应用名称是:" + appName + "=====";
     }
 
 }
