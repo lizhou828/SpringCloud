@@ -33,7 +33,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 
 //这里的name对应服务提供者的spring.application.name（大小写不敏感）
-@FeignClient(name = "eureka-server-application")
+@FeignClient(name = "service-provider-application")
 public interface TestService {
 
     @RequestMapping(value = "/getProviderAppName" ,method = RequestMethod.GET)
