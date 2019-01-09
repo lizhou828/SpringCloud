@@ -3,6 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
+
 	<parent>
 		<groupId>com.liz.springCloud</groupId>
 		<artifactId>springCloud</artifactId>
@@ -10,13 +11,12 @@
 	</parent>
 
 
-	<artifactId>eureka-server</artifactId>
+	<artifactId>eureka-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>jar</packaging>
+	<packaging>pom</packaging>
 
-	<name>eureka-server</name>
+	<name>eureka-service</name>
 	<description>Demo eureka-server for Spring Cloud</description>
-
 
 
 	<properties>
@@ -24,6 +24,11 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
 	</properties>
+
+	<modules>
+		<module>service-provider</module>
+		<module>service-provider-backup</module>
+	</modules>
 
 	<dependencies>
 		<!-- spring boot -->
